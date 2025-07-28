@@ -1,0 +1,231 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/farhaan-hussain/Docker-Container-hadoop-spark-pig-hive-/blob/master/PySpark%20GoogleCollab%20Test\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "fWl5VIkzaSvr",
+        "outputId": "2cb5cd18-4814-4127-ca87-24ed96ffd1dd"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Welcome\n"
+          ]
+        }
+      ],
+      "source": [
+        "print(\"Welcome\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"Farhaan Github Test\")"
+      ],
+      "metadata": {
+        "id": "bCfxbbjnabuS",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "9c303a06-cf04-4f46-f6b0-ac850cb6f671"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Farhaan Github Test\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "ls"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "kc88gpefgEhR",
+        "outputId": "8ba102b4-2732-4022-d927-0b8488bc079d"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\u001b[0m\u001b[01;36mbin\u001b[0m@                        \u001b[01;36mlib32\u001b[0m@                    \u001b[01;34mroot\u001b[0m/\n",
+            "\u001b[01;34mboot\u001b[0m/                       \u001b[01;36mlib64\u001b[0m@                    \u001b[01;34mrun\u001b[0m/\n",
+            "\u001b[01;34mcontent\u001b[0m/                    \u001b[01;36mlibx32\u001b[0m@                   \u001b[01;36msbin\u001b[0m@\n",
+            "cuda-keyring_1.1-1_all.deb  \u001b[01;34mmedia\u001b[0m/                    \u001b[01;34msrv\u001b[0m/\n",
+            "\u001b[01;34mdatalab\u001b[0m/                    \u001b[01;34mmnt\u001b[0m/                      \u001b[01;34msys\u001b[0m/\n",
+            "\u001b[01;34mdev\u001b[0m/                        NGC-DL-CONTAINER-LICENSE  \u001b[01;34mtest\u001b[0m/\n",
+            "\u001b[01;34metc\u001b[0m/                        \u001b[01;34mopt\u001b[0m/                      \u001b[30;42mtmp\u001b[0m/\n",
+            "\u001b[01;34mhome\u001b[0m/                       \u001b[01;34mproc\u001b[0m/                     \u001b[01;34mtools\u001b[0m/\n",
+            "\u001b[01;34mkaggle\u001b[0m/                     \u001b[01;34mpython-apt\u001b[0m/               \u001b[01;34musr\u001b[0m/\n",
+            "\u001b[01;36mlib\u001b[0m@                        \u001b[01;32mpython-apt.tar.xz\u001b[0m*        \u001b[01;34mvar\u001b[0m/\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "!pwd"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "X-DcN-3hdc5y",
+        "outputId": "f4be5a9b-34c8-4f5a-833d-4db598da4ced"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "/\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "!whoami"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "jjV8JBQ7qZ2j",
+        "outputId": "4bd672ab-7c29-475f-a9b3-206c3bff0c04"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "root\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "!uname -a"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "mGTC6WAaqfbs",
+        "outputId": "35b29c92-2a85-494f-db37-cf83ee7d2a66"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Linux cd7c43cd0814 6.1.123+ #1 SMP PREEMPT_DYNAMIC Sun Mar 30 16:01:29 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "cd content/"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "4OUKGyM1qjIm",
+        "outputId": "fbff6ed6-1363-4572-8613-5903a99de9f9"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "/content\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "ls"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "5KfuajC3qlXQ",
+        "outputId": "b2efa8ba-ef78-43e8-b853-3ca367f4fe0a"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\u001b[0m\u001b[01;34msample_data\u001b[0m/\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "4cuWpDwLqmQ3"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
